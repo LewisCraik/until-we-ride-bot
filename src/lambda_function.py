@@ -59,6 +59,7 @@ def lambda_handler(event, context):
     tweet = get_tweet()
 
     print(f"Post tweet: {tweet}")
-    # api.update_status(tweet)
+    api.update_status(tweet)
+    
 
     return {"statusCode": 200, "tweet": tweet}
