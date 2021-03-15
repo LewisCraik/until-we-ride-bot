@@ -61,5 +61,4 @@ def lambda_handler(event, context):
     print(f"Post tweet: {tweet}")
     api.update_status(tweet)
     
-
     return {"statusCode": 200, "tweet": tweet}

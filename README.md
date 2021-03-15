@@ -1,8 +1,11 @@
 # Twitter Bot Using Python and AWS Lambda
 
-![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/_dylancastillo.svg?style=social&label=Follow%20%40_dylancastillo)](https://twitter.com/_dylancastillo)
+![Python](https://img.shields.io/badge/Python-v3.8.3-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/untilweride.svg?style=social&label=Follow%20%40untilweride)](https://twitter.com/untilweride)
 
-This is a simple template you can use to build a twitter bot using Python and an AWS Lambda Function. I used it to create [@dereksiversbot](https://twitter.com/dereksiversbot). Learn how to make your own [here.](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
+This is a simple Twitter bot counting down the days until mountain bikers in England can meet up to ride together, based on the government's "roadmap out of lockdown". It is based on [Twitter Bot Using Python and AWS Lambda](https://github.com/dylanjcastillo/twitter-bot-python-aws-lambda) by [Dylan Castillo](https://github.com/dylanjcastillo), who also has a great tutorial [here.](https://dylancastillo.co/how-to-make-a-twitter-bot-for-free/)
+
+## Make your own bot
+If you want to make your own bot, you can clone/fork this repository, or [Twitter Bot Using Python and AWS Lambda](https://github.com/dylanjcastillo/twitter-bot-python-aws-lambda), however the instructions are from [Twitter Bot Using Python and AWS Lambda](https://github.com/dylanjcastillo/twitter-bot-python-aws-lambda).
  
 Why build a bot this way?
  
@@ -39,7 +42,7 @@ CONSUMER_SECRET=<YOUR_CONSUMER_SECRET_HERE>
 
 ## How to deploy
 
-Once you are happy with your bot:
+Once you are happy with your bot:https://github.com/LewisCraik/until-we-ride-bot
 
 1. Add any additional packages you used to `requirements.txt`
 2. Run `sh createlambdalayer.sh` from the root directory of your project. It'll generate a zip file with your libraries called `layer.zip`
