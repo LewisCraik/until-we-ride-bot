@@ -11,6 +11,7 @@ def get_tweet():
     today = datetime.date.today()           # Today
     dTravel = datetime.date(2021, 3, 29)    # Travel/5 friends
     dWales = datetime.date(2021, 4, 12)     # Travel to Wales
+    dScotland = datetime.date(2021, 4, 26)  # Travel to Scotland
     dGroup = datetime.date(2021, 5, 17)     # Groups up to 30
     dFreedom = datetime.date(2021, 6, 21)   # As many people as you like
 
@@ -29,22 +30,29 @@ def get_tweet():
             future = "Tomorrow we will also be able to travel to Wales."
         else:
             future = "In " + str(days.days) + " days we will also be able to travel to Wales."
+    elif today < dScotland:
+        current = "Mountain bikers in England we can travel within England and Wales to ride with 5 friends. "
+        days = abs(dScotland - today)
+        if days.days == 1:
+            future = "Tomorrow we will also be able to travel to Scotland."
+        else:
+            future = "In " + str(days.days) + " days we will also be able to travel to Scotland."
     elif today < dGroup:
-        current = "In England we can travel within England and Wales to ride with 5 friends. "
+        current = "Mountain bikers in England can travel within England, Scotland and Wales to ride with 5 friends. "
         days = abs(dGroup - today)
         if days.days == 1:
             future = "Tomorrow we will be able to ride in a group of up to 30 people, or travel abroad to ride."
         else:
             future = "In " + str(days.days) + " days we will be able to ride in a group of up to 30 people, or travel abroad to ride."
     elif today < dFreedom:
-        current = "In England we can travel within England and Wales, and ride in a group of up to 30 people, or travel abroad to ride. "
+        current = "Mountain bikers in England we can travel within England, Scotland and Wales, and ride in a group of up to 30 people, or travel abroad to ride. "
         days = abs(dFreedom - today)
         if days.days == 1:
             future = "Tomorrow we will be able to ride with as many people as we like!"
         else:
             future = "In " + str(days.days) + " days we will be able to ride with as many people as we like!"
     else:
-        current = "In England we can travel within England and Wales to ride with as many people as we want to. Or we can travel abroad to ride."
+        current = "Mountain bikers in England we can travel within England, Scotland and Wales to ride with as many people as we want to. Or we can travel abroad to ride."
         future = ""
     
     tweet_text = current + future
