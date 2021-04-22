@@ -31,7 +31,7 @@ def get_tweet():
         else:
             future = "In " + str(days.days) + " days we will also be able to travel to Wales."
     elif today < dScotland:
-        current = "Mountain bikers in England we can travel within England and Wales to ride with 5 friends. "
+        current = "Mountain bikers in England can travel within England and Wales to ride with 5 friends. "
         days = abs(dScotland - today)
         if days.days == 1:
             future = "Tomorrow we will also be able to travel to Scotland."
@@ -78,4 +78,4 @@ def lambda_handler(event, context):
     print(f"Tweet length: {len(tweet)}")
     api.update_status(tweet)
     
-    return {"statusCode": 200, "tweet": tweet}
+    return {"statusCode": 200, "tweet": tweet, "length": len(tweet)}
