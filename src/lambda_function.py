@@ -13,7 +13,7 @@ def get_tweet():
     dWales = datetime.date(2021, 4, 12)     # Travel to Wales
     dScotland = datetime.date(2021, 4, 26)  # Travel to Scotland
     dGroup = datetime.date(2021, 5, 17)     # Groups up to 30
-    dFreedom = datetime.date(2021, 6, 21)   # As many people as you like
+    dFreedom = datetime.date(2021, 7, 19)   # As many people as you like
 
     # Logic
     if today < dTravel:
