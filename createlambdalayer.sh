@@ -8,5 +8,5 @@ if [ "$1" != "" ] || [$# -gt 1]; then
 	ls -lah layer.zip
 
 else
-	echo "Enter python version as argument - ./createlayer.sh 3.6"
+	echo "Enter python version as argument - e.g. createlambdalayer.sh 3.6"
 fi

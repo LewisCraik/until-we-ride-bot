@@ -47,7 +47,7 @@ To make your own bot follow these steps:
 Once you are happy with your bot:
 
 1. Add any additional packages you used to `requirements.txt`
-2. Run `sh createlambdalayer.sh` from the root directory of your project. It'll generate a zip file with your libraries called `layer.zip`
+2. Run `sh createlambdalayer.sh 3.7` from the root directory of your project, replace 3.7 with your Python version if it is something else. It will generate a zip file with your libraries called `layer.zip`
 3. Update your Lambda Layer using `layer.zip`
 4. Run `sh buildpackage.sh` from the root directory of your project. It'll make a zip file with the code for your Lambda Function called `lambda_function.zip`
 5. Upload `lambda_function.zip` to your Lambda Function
